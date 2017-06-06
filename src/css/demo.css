@@ -1,0 +1,152 @@
+body, html {
+	height: 100%;
+}
+
+.navigation {
+	float: left;
+	min-width: 70px;
+	height: 100%;
+	box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	text-align: center;
+}
+
+.navigation a {
+	color: #383838;
+}
+
+.user {
+	border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.user a {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.title {
+	margin-top: 20px;
+}
+.title a{
+	padding: 5px 0;
+	display: block;
+	text-decoration: none;
+	-webkit-transition: background-color ease-in-out .15s,color ease-in-out .15s,box-shadow ease-in-out .15s;
+	-o-transition: background-color ease-in-out .15s,color ease-in-out .15s,box-shadow ease-in-out .15s;
+    	transition: background-color ease-in-out .15s,color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.title a:hover {
+	background-color: #4cb0f9;
+	color: white;
+}
+.title_clicked, .title a:active {
+	background-color: #1b9af7;
+	color: white !important;
+}
+
+#main {
+	overflow:hidden;
+	height: 100%;
+	background-color: #EEE;
+}
+
+.content {
+	margin: 40px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 4px;
+}
+.content a {
+	color: #1b9af7;
+	text-decoration: none;
+	outline: none;
+}
+.content th {
+	min-width: 60px;
+}
+.edit_th {
+	width: 30px;
+	max-width: 30px;
+	min-width: 30px;
+}
+
+.search_content {
+	padding: 15px 0;
+}
+.search_content input, .search_content textarea {
+	margin-top: 10px;
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	width: 200px;
+	height: 33px;
+	font-size: 14px;
+	padding: 8px 12px;
+	margin-right: 10px;
+	outline: none;
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.search_content textarea {
+	width: 350px;
+	height: 70px;
+}
+.search_content input:focus, .search_content textarea:focus {
+	border: 1px solid #adabab;
+}
+
+select {
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	width: 200px;
+	height: 33px;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-right: 10px;
+	outline: none;
+}
+
+.add_content {
+	padding-left: 20px;
+}
+.add_content input {
+	margin-top: 10px;
+}
+
+.page_component {
+	overflow: hidden;
+}
+.total {
+	float: right;
+	height: 79px;
+	line-height: 79px;
+	color: grey;
+}
+.page {
+	float: right;
+	padding-left: 10px;
+}
+.page a {
+	color: #4cb0f9 !important ;
+}
+.active a {
+	color: #fff !important ;
+	background-color: #4cb0f9 !important;
+	border-color: #4cb0f9 !important;
+}
+
+.form-horizontal label {
+	width: 20%;
+	padding-top: 15px;
+	float: left;
+	text-align: right;
+}
+
+.msg {
+    z-index: 9999;
+    position: fixed;
+}
+
+.errorMsg {
+	padding-top: 5px;
+	color: red;
+}
