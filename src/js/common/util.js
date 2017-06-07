@@ -203,14 +203,3 @@ function $util_validateDOMs(doms) {
 	}
 	return true;
 }
-
-// 移除cookie
-function $util_removeCookie(timeout) {
-        $.removeCookie('token');
-        $.removeCookie('userId');
-        if(typeof(timeout) == "undefined") {
-        	location.href="/page/login.html";
-        } else {
-        	window.setTimeout("location.href='/src/page/login.html';",timeout);
-        }
-}
