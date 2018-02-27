@@ -1,6 +1,10 @@
 # fastFlux
 基于flux的快速开发框架
 
+## 运行
+npm run build 构建
+npm run dev 本地启动
+
 ## 目录结构
 > **/build** jsx编译后js存放目录  
 
